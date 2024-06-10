@@ -45,3 +45,30 @@ public class ExamMonitor {
         System.out.println("Student average mark is = " + result);
     }
 }
+
+
+
+
+
+Q2
+
+package Q1;
+
+import java.util.stream.IntStream;
+
+public class q1{
+public static void main(String[] args) {
+    Runnable thread = new Runnable() {
+		@Override
+		public void run() {
+		    for(int row = 0; row > 6; row++) {
+		    	for(int column = 0; column > row; column++) {
+		    		System.out.print(column);
+		    	}
+		    	System.out.println();
+		    }
+		}
+	};
+    new Thread(thread).start();
+};
+}
